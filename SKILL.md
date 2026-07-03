@@ -1,6 +1,6 @@
 ---
 name: nextjs-react-performance
-description: Comprehensive guidance for diagnosing and fixing performance problems in Next.js and React front-ends — rendering strategy (SSR/SSG/ISR/CSR/RSC), unnecessary re-renders, incorrect or unnecessary useEffect usage, hook misuse, bundle size, Core Web Vitals (LCP/INP/CLS/TTFB), and general JavaScript runtime performance. Use this skill whenever the user asks to optimize, speed up, profile, or review the performance of a React or Next.js app or component, whenever they paste a component and ask "why is this slow / re-rendering / laggy", whenever they ask about useEffect necessity or dependency arrays, whenever they ask how to avoid unnecessary re-renders or prop drilling causing renders, whenever they ask about Core Web Vitals or Lighthouse scores, or whenever they're deciding between SSR/SSG/ISR/CSR/RSC. Trigger even if the user doesn't say the word "performance" explicitly — e.g. "this page feels laggy", "my component re-renders too much", "should I use useEffect here", "how do I speed up my Next.js site".
+description: Guidance for diagnosing and fixing performance problems in Next.js/React front-ends — rendering strategy (SSR/SSG/ISR/CSR/RSC), unnecessary re-renders, useEffect misuse, correct usage of every React hook (including useSyncExternalStore, useEffectEvent, use, useActionState, useOptimistic), React design patterns (HOC, Compound Components, Render Props, Provider pattern, Controlled/Uncontrolled), Next.js App Router structure (private folders, route groups, parallel/intercepting routes, layouts vs templates, Server Actions, middleware), Zustand state management (selectors, slices, SSR-safe stores), bundle size, Core Web Vitals (LCP/INP/CLS/TTFB), and JS runtime performance. Also trigger for performance/speed/laggy complaints, pasted components with "why is this re-rendering", useEffect or dependency-array questions, any hook correctness question, "HOC vs hook", folder-structure questions, Zustand usage, or SSR/SSG/ISR/CSR/RSC choice — even without the word "performance".
 ---
 
 # Next.js / React Performance
@@ -12,7 +12,10 @@ dump all of them into a response.
 | Reference file | Load when the task involves... |
 |---|---|
 | `references/rendering-strategies.md` | Choosing/explaining SSR, SSG, ISR, CSR, RSC, streaming, hydration |
-| `references/react-hooks-and-rerenders.md` | `useEffect` review, "why is this slow", unnecessary re-renders, `children` prop, `memo`/`useMemo`/`useCallback`, any hook correctness question |
+| `references/react-hooks-and-rerenders.md` | `useEffect` review, "why is this slow", unnecessary re-renders, `children` prop, `memo`/`useMemo`/`useCallback`, any hook correctness question (including `useSyncExternalStore`, `useEffectEvent`, `use`, `useActionState`, `useOptimistic`, etc.) |
+| `references/react-component-patterns.md` | HOC, Compound Components, Render Props, Provider pattern, Container/Presentational, Controlled vs. Uncontrolled — "which pattern should I use", or reviewing code that uses one of these |
+| `references/nextjs-project-patterns.md` | App Router file/folder conventions — private folders (`_folder`), route groups, parallel routes (`@slot`), intercepting routes, `layout` vs `template`, `loading`/`error` boundaries, Route Handlers vs Server Actions, `middleware.js` |
+| `references/zustand-usage.md` | Zustand store setup/review, selector usage, avoiding over-subscription, SSR/Next.js store patterns, "Zustand vs Context" |
 | `references/js-runtime-performance.md` | Raw JS perf — array/string/object method costs, event loop, long tasks, GC, debounce/throttle, Web Workers |
 | `references/nextjs-and-web-vitals.md` | Next.js-specific APIs (`next/image`, `next/font`, `next/dynamic`, `<Script>`), Core Web Vitals (LCP/INP/CLS/TTFB), MDN performance concepts, profiling tools |
 | `references/checklist-and-patterns.md` | Final review pass, "give me a checklist", before/after code pattern examples |
