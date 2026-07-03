@@ -6,12 +6,15 @@ AI skill pack for diagnosing and fixing front-end performance problems. Loaded b
 
 | File | Covers |
 |---|---|
-| `SKILL.md` | Skill definition — triggers, usage guide, output format |
-| `references/rendering-strategies.md` | SSR, SSG, ISR, CSR, RSC, streaming, hydration trade-offs |
-| `references/react-hooks-and-rerenders.md` | `useEffect` correctness, `memo`/`useMemo`/`useCallback`, re-render causes, `children` composition |
-| `references/js-runtime-performance.md` | Event loop, long tasks, GC, array/string/object costs, Web Workers |
-| `references/nextjs-and-web-vitals.md` | `next/image`, `next/font`, `next/dynamic`, LCP/INP/CLS/TTFB, profiling tools |
-| `references/checklist-and-patterns.md` | Audit checklist, before/after code patterns |
+| [SKILL.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/SKILL.md) | Skill definition — triggers, usage guide, output format |
+| [rendering-strategies.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/references/rendering-strategies.md) | SSR, SSG, ISR, CSR, RSC, streaming, hydration trade-offs |
+| [react-hooks-and-rerenders.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/references/react-hooks-and-rerenders.md) | `useEffect` correctness, `memo`/`useMemo`/`useCallback`, re-render causes, `children` composition, advanced hooks |
+| [react-component-patterns.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/references/react-component-patterns.md) | Component architecture (HOC, Render Props, Compound Components, Providers) and re-render minimization |
+| [nextjs-project-patterns.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/references/nextjs-project-patterns.md) | App Router conventions, layouts vs templates, parallel/intercepting routes, Route Handlers, Server Actions, middleware |
+| [zustand-usage.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/references/zustand-usage.md) | Zustand store structure, selector optimizations, over-subscription prevention, and SSR/Next.js integration |
+| [js-runtime-performance.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/references/js-runtime-performance.md) | Event loop, long tasks, GC, array/string/object costs, Web Workers |
+| [nextjs-and-web-vitals.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/references/nextjs-and-web-vitals.md) | `next/image`, `next/font`, `next/dynamic`, LCP/INP/CLS/TTFB, profiling tools |
+| [checklist-and-patterns.md](file:///c:/Users/lenovo/Downloads/nextjs-react-performance/nextjs-react-performance/references/checklist-and-patterns.md) | Audit checklist, before/after code patterns |
 
 ## Usage
 
